@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="24375" started-at="2021-01-04T11:21:47Z" finished-at="2021-01-04T11:22:11Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="24375" started-at="2021-01-04T11:21:47Z" finished-at="2021-01-04T11:22:11Z">
+      <class name="TestCases.LoginTest">
+        <test-method status="PASS" signature="initApplication()[pri:0, instance:TestCases.LoginTest@61862a7f]" name="initApplication" is-config="true" duration-ms="24278" started-at="2021-01-04T11:21:23Z" finished-at="2021-01-04T11:21:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initApplication -->
+        <test-method status="PASS" signature="Extent()[pri:0, instance:TestCases.LoginTest@61862a7f]" name="Extent" is-config="true" duration-ms="6983" started-at="2021-01-04T11:21:47Z" finished-at="2021-01-04T11:21:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Extent -->
+        <test-method status="PASS" signature="login()[pri:0, instance:TestCases.LoginTest@61862a7f]" name="login" duration-ms="8947" started-at="2021-01-04T11:21:54Z" finished-at="2021-01-04T11:22:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="TakeScreenshot(org.testng.ITestResult)[pri:0, instance:TestCases.LoginTest@61862a7f]" name="TakeScreenshot" is-config="true" duration-ms="6" started-at="2021-01-04T11:22:03Z" finished-at="2021-01-04T11:22:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=login status=SUCCESS method=LoginTest.login()[pri:0, instance:TestCases.LoginTest@61862a7f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TakeScreenshot -->
+        <test-method status="PASS" signature="GenerareReport()[pri:0, instance:TestCases.LoginTest@61862a7f]" name="GenerareReport" is-config="true" duration-ms="8358" started-at="2021-01-04T11:22:03Z" finished-at="2021-01-04T11:22:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GenerareReport -->
+        <test-method status="PASS" signature="CloseFramework()[pri:0, instance:TestCases.LoginTest@61862a7f]" name="CloseFramework" is-config="true" duration-ms="205" started-at="2021-01-04T11:22:12Z" finished-at="2021-01-04T11:22:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseFramework -->
+      </class> <!-- TestCases.LoginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
