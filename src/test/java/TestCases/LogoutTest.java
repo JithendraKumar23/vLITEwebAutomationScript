@@ -8,7 +8,7 @@ import Pages.ProfileMenuPage;
 
 public class LogoutTest extends BaseTest{
 	
-	@Test(enabled=true)
+	@Test(enabled=true , groups = {"First Login and Logout"})
 	public void Logout() throws InterruptedException
 	{
 		HomePage homeppage = new HomePage(driver);

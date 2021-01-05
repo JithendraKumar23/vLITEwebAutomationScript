@@ -1,44 +1,110 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="8" total="12" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="27615" started-at="2021-01-05T03:58:29Z" finished-at="2021-01-05T03:58:57Z">
+  <suite name="Suite" duration-ms="43718" started-at="2021-01-05T06:54:27Z" finished-at="2021-01-05T06:55:10Z">
     <groups>
+      <group name="First Login and Logout">
+        <method signature="LoginTest.login()[pri:0, instance:TestCases.LoginTest@57baeedf]" name="login" class="TestCases.LoginTest"/>
+        <method signature="LogoutTest.Logout()[pri:0, instance:TestCases.LogoutTest@343f4d3d]" name="Logout" class="TestCases.LogoutTest"/>
+        <method signature="LogoutTest.Logout()[pri:0, instance:TestCases.LogoutTest@3f49dace]" name="Logout" class="TestCases.LogoutTest"/>
+      </group> <!-- First Login and Logout -->
     </groups>
-    <test name="Default test" duration-ms="27615" started-at="2021-01-05T03:58:29Z" finished-at="2021-01-05T03:58:57Z">
-      <class name="TestCases.PlayerSettingsTest">
-        <test-method status="PASS" signature="initApplication()[pri:0, instance:TestCases.PlayerSettingsTest@53b32d7]" name="initApplication" is-config="true" duration-ms="14634" started-at="2021-01-05T03:58:15Z" finished-at="2021-01-05T03:58:29Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initApplication -->
-        <test-method status="PASS" signature="Extent()[pri:0, instance:TestCases.PlayerSettingsTest@53b32d7]" name="Extent" is-config="true" duration-ms="932" started-at="2021-01-05T03:58:29Z" finished-at="2021-01-05T03:58:30Z">
+    <test name="FlipKart" duration-ms="19231" started-at="2021-01-05T06:54:27Z" finished-at="2021-01-05T06:54:46Z">
+      <class name="TestCases.LoginTest">
+        <test-method status="PASS" signature="Extent()[pri:0, instance:TestCases.LoginTest@57baeedf]" name="Extent" is-config="true" duration-ms="1566" started-at="2021-01-05T06:54:27Z" finished-at="2021-01-05T06:54:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Extent -->
-        <test-method status="PASS" signature="listAndSelectTheQuality()[pri:0, instance:TestCases.PlayerSettingsTest@53b32d7]" name="listAndSelectTheQuality" duration-ms="26027" started-at="2021-01-05T03:58:30Z" finished-at="2021-01-05T03:58:56Z">
+        <test-method status="PASS" signature="login()[pri:0, instance:TestCases.LoginTest@57baeedf]" name="login" duration-ms="9126" started-at="2021-01-05T06:54:28Z" finished-at="2021-01-05T06:54:37Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- listAndSelectTheQuality -->
-        <test-method status="PASS" signature="TakeScreenshot(org.testng.ITestResult)[pri:0, instance:TestCases.PlayerSettingsTest@53b32d7]" name="TakeScreenshot" is-config="true" duration-ms="4" started-at="2021-01-05T03:58:56Z" finished-at="2021-01-05T03:58:56Z">
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="TakeScreenshot(org.testng.ITestResult)[pri:0, instance:TestCases.LoginTest@57baeedf]" name="TakeScreenshot" is-config="true" duration-ms="4" started-at="2021-01-05T06:54:37Z" finished-at="2021-01-05T06:54:37Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=listAndSelectTheQuality status=SUCCESS method=PlayerSettingsTest.listAndSelectTheQuality()[pri:0, instance:TestCases.PlayerSettingsTest@53b32d7] output={null}]]]>
+                <![CDATA[[TestResult name=login status=SUCCESS method=LoginTest.login()[pri:0, instance:TestCases.LoginTest@57baeedf] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TakeScreenshot -->
-        <test-method status="PASS" signature="GenerareReport()[pri:0, instance:TestCases.PlayerSettingsTest@53b32d7]" name="GenerareReport" is-config="true" duration-ms="602" started-at="2021-01-05T03:58:56Z" finished-at="2021-01-05T03:58:57Z">
+        <test-method status="PASS" signature="GenerareReport()[pri:0, instance:TestCases.LoginTest@57baeedf]" name="GenerareReport" is-config="true" duration-ms="590" started-at="2021-01-05T06:54:45Z" finished-at="2021-01-05T06:54:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GenerareReport -->
-        <test-method status="PASS" signature="CloseFramework()[pri:0, instance:TestCases.PlayerSettingsTest@53b32d7]" name="CloseFramework" is-config="true" duration-ms="435" started-at="2021-01-05T03:58:57Z" finished-at="2021-01-05T03:58:58Z">
+      </class> <!-- TestCases.LoginTest -->
+      <class name="TestCases.LogoutTest">
+        <test-method status="PASS" signature="Logout()[pri:0, instance:TestCases.LogoutTest@343f4d3d]" name="Logout" duration-ms="7818" started-at="2021-01-05T06:54:37Z" finished-at="2021-01-05T06:54:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Logout -->
+        <test-method status="PASS" signature="TakeScreenshot(org.testng.ITestResult)[pri:0, instance:TestCases.LogoutTest@343f4d3d]" name="TakeScreenshot" is-config="true" duration-ms="1" started-at="2021-01-05T06:54:45Z" finished-at="2021-01-05T06:54:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Logout status=SUCCESS method=LogoutTest.Logout()[pri:0, instance:TestCases.LogoutTest@343f4d3d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TakeScreenshot -->
+      </class> <!-- TestCases.LogoutTest -->
+    </test> <!-- FlipKart -->
+    <test name="Myntra" duration-ms="24458" started-at="2021-01-05T06:54:46Z" finished-at="2021-01-05T06:55:10Z">
+      <class name="TestCases.FBSignUpTest">
+        <test-method status="PASS" signature="initApplication()[pri:0, instance:TestCases.FBSignUpTest@31a5c39e]" name="initApplication" is-config="true" duration-ms="14711" started-at="2021-01-05T06:54:12Z" finished-at="2021-01-05T06:54:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initApplication -->
+        <test-method status="PASS" signature="Extent()[pri:0, instance:TestCases.FBSignUpTest@31a5c39e]" name="Extent" is-config="true" duration-ms="317" started-at="2021-01-05T06:54:46Z" finished-at="2021-01-05T06:54:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Extent -->
+        <test-method status="PASS" signature="fbSignUp()[pri:0, instance:TestCases.FBSignUpTest@31a5c39e]" name="fbSignUp" duration-ms="17280" started-at="2021-01-05T06:54:46Z" finished-at="2021-01-05T06:55:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fbSignUp -->
+        <test-method status="PASS" signature="TakeScreenshot(org.testng.ITestResult)[pri:0, instance:TestCases.FBSignUpTest@31a5c39e]" name="TakeScreenshot" is-config="true" duration-ms="0" started-at="2021-01-05T06:55:03Z" finished-at="2021-01-05T06:55:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=fbSignUp status=SUCCESS method=FBSignUpTest.fbSignUp()[pri:0, instance:TestCases.FBSignUpTest@31a5c39e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TakeScreenshot -->
+        <test-method status="PASS" signature="GenerareReport()[pri:0, instance:TestCases.FBSignUpTest@31a5c39e]" name="GenerareReport" is-config="true" duration-ms="52" started-at="2021-01-05T06:55:10Z" finished-at="2021-01-05T06:55:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GenerareReport -->
+        <test-method status="PASS" signature="CloseFramework()[pri:0, instance:TestCases.FBSignUpTest@31a5c39e]" name="CloseFramework" is-config="true" duration-ms="0" started-at="2021-01-05T06:55:10Z" finished-at="2021-01-05T06:55:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseFramework -->
-      </class> <!-- TestCases.PlayerSettingsTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- TestCases.FBSignUpTest -->
+      <class name="TestCases.LogoutTest">
+        <test-method status="PASS" signature="Logout()[pri:0, instance:TestCases.LogoutTest@3f49dace]" name="Logout" duration-ms="6802" started-at="2021-01-05T06:55:03Z" finished-at="2021-01-05T06:55:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Logout -->
+        <test-method status="PASS" signature="TakeScreenshot(org.testng.ITestResult)[pri:0, instance:TestCases.LogoutTest@3f49dace]" name="TakeScreenshot" is-config="true" duration-ms="0" started-at="2021-01-05T06:55:10Z" finished-at="2021-01-05T06:55:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Logout status=SUCCESS method=LogoutTest.Logout()[pri:0, instance:TestCases.LogoutTest@3f49dace] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TakeScreenshot -->
+      </class> <!-- TestCases.LogoutTest -->
+    </test> <!-- Myntra -->
+  </suite> <!-- Suite -->
 </testng-results>

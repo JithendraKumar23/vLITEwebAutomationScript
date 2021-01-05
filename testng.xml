@@ -1,13 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-  <test thread-count="5" name="Test">
   
-  <classes>
-    
-      <class name="TestCases.LoginTest"/>
-      
-    </classes>
+  <!-- thread-count="5" Using for the Parallel Execution -->
   
-  </test> <!-- Test -->
-</suite> <!-- Suite -->
+  <!-- <groups>
+  		<run>
+  				<include name="First Login and Logout"></include>
+  		</run>
+  </groups> -->
+  
+  
+  <test name="Normal_Login">
+	<classes>
+		<class name="TestCases.LoginTest" />
+		<class name="TestCases.LogoutTest" />
+	</classes>
+  </test>
+   
+  <test name="FB_SignUp">
+	<classes>
+		<class name="TestCases.FBSignUpTest" />
+		<class name="TestCases.LogoutTest" />
+	</classes>
+  </test>
+
+	<test name="FB_Login">
+		<classes>
+			<class name="TestCases.FBLoginTest" />
+			<class name="TestCases.LogoutTest" />
+		</classes>
+	</test>
+
+	<test name="Google_SignUp">
+		<classes>
+			<class name="TestCases.GoogleSignUpTest" />
+			<class name="TestCases.LogoutTest" />
+		</classes>
+	</test>
+
+	<test name="Google_Login">
+		<classes>
+			<class name="TestCases.GoogleLoginTest" />
+			<class name="TestCases.LogoutTest" />
+		</classes>
+	</test> 
+     
+  
+  
+</suite>

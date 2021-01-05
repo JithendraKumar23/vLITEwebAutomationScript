@@ -9,7 +9,7 @@ import Pages.SelectPlanPage;
 
 public class LoginTest extends BaseTest {
 	
-	@Test(enabled = true)
+	@Test(enabled = true , groups= {"First Login and Logout"})
 	public void login() throws InterruptedException
 	{
 		HomePage homepage = new HomePage(driver);
