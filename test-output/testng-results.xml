@@ -2,43 +2,43 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="24375" started-at="2021-01-04T11:21:47Z" finished-at="2021-01-04T11:22:11Z">
+  <suite name="Default suite" duration-ms="27615" started-at="2021-01-05T03:58:29Z" finished-at="2021-01-05T03:58:57Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="24375" started-at="2021-01-04T11:21:47Z" finished-at="2021-01-04T11:22:11Z">
-      <class name="TestCases.LoginTest">
-        <test-method status="PASS" signature="initApplication()[pri:0, instance:TestCases.LoginTest@61862a7f]" name="initApplication" is-config="true" duration-ms="24278" started-at="2021-01-04T11:21:23Z" finished-at="2021-01-04T11:21:47Z">
+    <test name="Default test" duration-ms="27615" started-at="2021-01-05T03:58:29Z" finished-at="2021-01-05T03:58:57Z">
+      <class name="TestCases.PlayerSettingsTest">
+        <test-method status="PASS" signature="initApplication()[pri:0, instance:TestCases.PlayerSettingsTest@53b32d7]" name="initApplication" is-config="true" duration-ms="14634" started-at="2021-01-05T03:58:15Z" finished-at="2021-01-05T03:58:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initApplication -->
-        <test-method status="PASS" signature="Extent()[pri:0, instance:TestCases.LoginTest@61862a7f]" name="Extent" is-config="true" duration-ms="6983" started-at="2021-01-04T11:21:47Z" finished-at="2021-01-04T11:21:54Z">
+        <test-method status="PASS" signature="Extent()[pri:0, instance:TestCases.PlayerSettingsTest@53b32d7]" name="Extent" is-config="true" duration-ms="932" started-at="2021-01-05T03:58:29Z" finished-at="2021-01-05T03:58:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Extent -->
-        <test-method status="PASS" signature="login()[pri:0, instance:TestCases.LoginTest@61862a7f]" name="login" duration-ms="8947" started-at="2021-01-04T11:21:54Z" finished-at="2021-01-04T11:22:03Z">
+        <test-method status="PASS" signature="listAndSelectTheQuality()[pri:0, instance:TestCases.PlayerSettingsTest@53b32d7]" name="listAndSelectTheQuality" duration-ms="26027" started-at="2021-01-05T03:58:30Z" finished-at="2021-01-05T03:58:56Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login -->
-        <test-method status="PASS" signature="TakeScreenshot(org.testng.ITestResult)[pri:0, instance:TestCases.LoginTest@61862a7f]" name="TakeScreenshot" is-config="true" duration-ms="6" started-at="2021-01-04T11:22:03Z" finished-at="2021-01-04T11:22:03Z">
+        </test-method> <!-- listAndSelectTheQuality -->
+        <test-method status="PASS" signature="TakeScreenshot(org.testng.ITestResult)[pri:0, instance:TestCases.PlayerSettingsTest@53b32d7]" name="TakeScreenshot" is-config="true" duration-ms="4" started-at="2021-01-05T03:58:56Z" finished-at="2021-01-05T03:58:56Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=login status=SUCCESS method=LoginTest.login()[pri:0, instance:TestCases.LoginTest@61862a7f] output={null}]]]>
+                <![CDATA[[TestResult name=listAndSelectTheQuality status=SUCCESS method=PlayerSettingsTest.listAndSelectTheQuality()[pri:0, instance:TestCases.PlayerSettingsTest@53b32d7] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TakeScreenshot -->
-        <test-method status="PASS" signature="GenerareReport()[pri:0, instance:TestCases.LoginTest@61862a7f]" name="GenerareReport" is-config="true" duration-ms="8358" started-at="2021-01-04T11:22:03Z" finished-at="2021-01-04T11:22:11Z">
+        <test-method status="PASS" signature="GenerareReport()[pri:0, instance:TestCases.PlayerSettingsTest@53b32d7]" name="GenerareReport" is-config="true" duration-ms="602" started-at="2021-01-05T03:58:56Z" finished-at="2021-01-05T03:58:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GenerareReport -->
-        <test-method status="PASS" signature="CloseFramework()[pri:0, instance:TestCases.LoginTest@61862a7f]" name="CloseFramework" is-config="true" duration-ms="205" started-at="2021-01-04T11:22:12Z" finished-at="2021-01-04T11:22:12Z">
+        <test-method status="PASS" signature="CloseFramework()[pri:0, instance:TestCases.PlayerSettingsTest@53b32d7]" name="CloseFramework" is-config="true" duration-ms="435" started-at="2021-01-05T03:58:57Z" finished-at="2021-01-05T03:58:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseFramework -->
-      </class> <!-- TestCases.LoginTest -->
+      </class> <!-- TestCases.PlayerSettingsTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -54,63 +54,76 @@ public class PlayerPage extends BasePage {
 	public void getTheContentTitle() throws InterruptedException 
 	{
 		waitTillTheElementVisible(toPrintTheContentTilte);
-		Thread.sleep(500);
+		Thread.sleep(2500);
 		System.out.println("Content Title : " + toPrintTheContentTilte.getText() );
 	}
 	
 	public void pauseContent() throws InterruptedException 
 	{
+		Thread.sleep(5000);
 		waitTillTheElementVisible(ClickPAUSEButton);
-		Thread.sleep(500);
+		Thread.sleep(2000);
 		ClickPAUSEButton.click();
 	}
 	
 	public void playContent() throws InterruptedException 
 	{
 		waitTillTheElementVisible(ClickPLAYButton);
-		Thread.sleep(500);
+		Thread.sleep(3000);
 		ClickPLAYButton.click();
 	}
 	
 	public void forwardContent() throws InterruptedException 
 	{
 		waitTillTheElementVisible(ClickFORWARDButton);
+		Thread.sleep(2000);
+		ClickFORWARDButton.click();
+		waitTillTheElementVisible(ClickFORWARDButton);
+		Thread.sleep(1000);
+		ClickFORWARDButton.click();
+		waitTillTheElementVisible(ClickFORWARDButton);
 		Thread.sleep(500);
+		ClickFORWARDButton.click();
+		waitTillTheElementVisible(ClickFORWARDButton);
+		Thread.sleep(250);
 		ClickFORWARDButton.click();
 	}
 	
 	public void backwardContent() throws InterruptedException 
 	{
 		waitTillTheElementVisible(ClickBACKWARDButton);
-		Thread.sleep(500);
+		Thread.sleep(2000);
+		ClickBACKWARDButton.click();
+		waitTillTheElementVisible(ClickBACKWARDButton);
+		Thread.sleep(1000);
 		ClickBACKWARDButton.click();
 	}
 	
 	public void explandTheContentScreen() throws InterruptedException 
 	{
 		waitTillTheElementVisible(toExpandTheScreen);
-		Thread.sleep(500);
+		Thread.sleep(2000);
 		toExpandTheScreen.click();
 	}
 	
 	public void minimizeTheScreen() throws InterruptedException 
 	{
 		waitTillTheElementVisible(forTheNormalTheScreen);
-		Thread.sleep(500);
+		Thread.sleep(2000);
 		forTheNormalTheScreen.click();
 	}
 	
 	public void clickBackButtonFromPlayerPage() throws InterruptedException 
 	{
 		waitTillTheElementVisible(clickOnBackbutton);
-		Thread.sleep(500);
+		Thread.sleep(1000);
 		clickOnBackbutton.click();
 	}
 	
 	public void clickOnQualityButton() throws InterruptedException 
 	{
 		waitTillTheElementVisible(clickOnTheQualityButton);
-		Thread.sleep(500);
+		Thread.sleep(2000);
 		clickOnTheQualityButton.click();
 	}
 	

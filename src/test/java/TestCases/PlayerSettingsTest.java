@@ -7,18 +7,20 @@ import Pages.DetailPage;
 import Pages.HomePage;
 import Pages.LoginPage;
 import Pages.PlayerPage;
+import Pages.PlayerSettingsPage;
 
-public class PlayerTest extends BaseTest{
+public class PlayerSettingsTest extends BaseTest{
 
 	
 @Test(enabled = true)
 	
-	public void basicPlayerFunctionality() throws InterruptedException
+	public void listAndSelectTheQuality() throws InterruptedException
 	{
 		HomePage homepage = new HomePage(driver);
 		LoginPage loginpage = new LoginPage(driver);
 		DetailPage detailPage = new DetailPage(driver);
 		PlayerPage playerpage = new PlayerPage(driver);
+		PlayerSettingsPage playersettingspage = new PlayerSettingsPage(driver); 
 		
 		homepage.clickOnBUYButton_forFreeContet_Vidoes();
 		loginpage.enterEmailID(UN);
@@ -28,19 +30,9 @@ public class PlayerTest extends BaseTest{
 		homepage.getTheTextOftheButtonfromDetailPage();
 		detailPage.clickOnBUYorWATCH();
 		
-		playerpage.pauseContent();
-		playerpage.playContent();
-		playerpage.getTheContentTitle();
-		playerpage.forwardContent();
-		playerpage.backwardContent();
-		playerpage.printTotlaDurationOfTheContent();
-		playerpage.explandTheContentScreen();
-		playerpage.minimizeTheScreen();
 		playerpage.clickOnQualityButton();
-		
+		playersettingspage.listTheQuality();
+		playersettingspage.selectTheQualityandPrintSelectedQuality();
 		
 	}
-
-
-
 }
