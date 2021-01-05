@@ -1,25 +1,100 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test thread-count="5" name="Test(failed)">
-    <groups>
-      <run>
-        <include name="First Login and Logout"/>
-      </run>
-    </groups>
+  <test thread-count="5" name="FB_SignUp(failed)">
     <classes>
-      <class name="TestCases.LoginTest">
+      <class name="TestCases.FBSignUpTest">
         <methods>
-          <include name="login"/>
           <include name="CloseFramework"/>
+          <include name="Extent"/>
+          <include name="GenerareReport"/>
+          <include name="TakeScreenshot"/>
+          <include name="initApplication"/>
+          <include name="fbSignUp"/>
         </methods>
-      </class> <!-- TestCases.LoginTest -->
+      </class> <!-- TestCases.FBSignUpTest -->
       <class name="TestCases.LogoutTest">
         <methods>
           <include name="CloseFramework"/>
+          <include name="Extent"/>
+          <include name="GenerareReport"/>
+          <include name="TakeScreenshot"/>
+          <include name="initApplication"/>
           <include name="Logout"/>
         </methods>
       </class> <!-- TestCases.LogoutTest -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- FB_SignUp(failed) -->
+  <test thread-count="5" name="FB_LoginUp(failed)">
+    <classes>
+      <class name="TestCases.LogoutTest">
+        <methods>
+          <include name="CloseFramework"/>
+          <include name="Extent"/>
+          <include name="GenerareReport"/>
+          <include name="TakeScreenshot"/>
+          <include name="initApplication"/>
+          <include name="Logout"/>
+        </methods>
+      </class> <!-- TestCases.LogoutTest -->
+      <class name="TestCases.FBLoginTest">
+        <methods>
+          <include name="CloseFramework"/>
+          <include name="fbSignUp"/>
+          <include name="Extent"/>
+          <include name="GenerareReport"/>
+          <include name="TakeScreenshot"/>
+          <include name="initApplication"/>
+        </methods>
+      </class> <!-- TestCases.FBLoginTest -->
+    </classes>
+  </test> <!-- FB_LoginUp(failed) -->
+  <test thread-count="5" name="Google_SignUp(failed)">
+    <classes>
+      <class name="TestCases.LogoutTest">
+        <methods>
+          <include name="CloseFramework"/>
+          <include name="Extent"/>
+          <include name="GenerareReport"/>
+          <include name="TakeScreenshot"/>
+          <include name="initApplication"/>
+          <include name="Logout"/>
+        </methods>
+      </class> <!-- TestCases.LogoutTest -->
+      <class name="TestCases.GoogleSignUpTest">
+        <methods>
+          <include name="CloseFramework"/>
+          <include name="googleSignUp"/>
+          <include name="Extent"/>
+          <include name="GenerareReport"/>
+          <include name="TakeScreenshot"/>
+          <include name="initApplication"/>
+        </methods>
+      </class> <!-- TestCases.GoogleSignUpTest -->
+    </classes>
+  </test> <!-- Google_SignUp(failed) -->
+  <test thread-count="5" name="Google_LoginUp(failed)">
+    <classes>
+      <class name="TestCases.GoogleLoginTest">
+        <methods>
+          <include name="CloseFramework"/>
+          <include name="Extent"/>
+          <include name="GenerareReport"/>
+          <include name="TakeScreenshot"/>
+          <include name="initApplication"/>
+          <include name="googleSignUp"/>
+        </methods>
+      </class> <!-- TestCases.GoogleLoginTest -->
+      <class name="TestCases.LogoutTest">
+        <methods>
+          <include name="CloseFramework"/>
+          <include name="Extent"/>
+          <include name="GenerareReport"/>
+          <include name="TakeScreenshot"/>
+          <include name="initApplication"/>
+          <include name="Logout"/>
+        </methods>
+      </class> <!-- TestCases.LogoutTest -->
+    </classes>
+  </test> <!-- Google_LoginUp(failed) -->
 </suite> <!-- Failed suite [Suite] -->
