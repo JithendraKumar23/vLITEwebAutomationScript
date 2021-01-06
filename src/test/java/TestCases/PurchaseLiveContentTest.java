@@ -11,10 +11,10 @@ import Pages.SelectQualityPage;
 import Pages.SubscribeOrPurchasePage;
 import Pages.SuccessPopUp;
 
-public class LiveContentPurchase extends BaseTest{
+public class PurchaseLiveContentTest extends BaseTest{
 	
 	@Test(enabled = true)
-	public void login() throws InterruptedException
+	public void PurchaseLiveContent() throws InterruptedException
 	{
 		HomePage homepage = new HomePage(driver);
 		LoginPage loginpage = new LoginPage(driver);

@@ -9,7 +9,7 @@ import Pages.LoginPage;
 import Pages.PlayerPage;
 import Pages.PlayerSettingsPage;
 
-public class PlayerSettingsTest extends BaseTest{
+public class PlayerQualityTest extends BaseTest{
 
 	
 @Test(enabled = true)

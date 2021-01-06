@@ -35,6 +35,12 @@ public class HomePage extends BasePage {
 	@FindBy(xpath="//*[@id='car-slider-live-tv-item0']/div/div/div[1]/div[1]/img")
 	private WebElement clickOnLiveFirstContent;
 	
+	@FindBy(xpath="//*[@id='car-slider-movies-item0']/div/div/div[1]/div[1]/img")
+	private WebElement clickOnMovieFirstContent;
+	
+	@FindBy(xpath="//*[@id='car-slider-shows-item0']/div/div/div[1]/div[1]/img")
+	private WebElement clickOnSeriesFirstContent;
+	
 	@FindBy(xpath="//*[@id='car-slider-videos-item0']/div/div/div[1]/div[1]/img")
 	private WebElement clickOnVidoesFirstContent_freeContent;
 	
@@ -65,7 +71,38 @@ public class HomePage extends BasePage {
 	@FindBy(xpath="//a[text()='PRIVACY POLICY']")
 	private WebElement clickOnPrivacyPolicy;
 	
+	@FindBy(xpath="//*[text()='Episodes']")
+	private WebElement clickOnEpisodeSection;
 	
+	@FindBy(xpath="//*[text()='Trailers']")
+	private WebElement clickOnTrailerSection;
+	
+	@FindBy(xpath="//*[text()='Related']")
+	private WebElement clickOnRelatedSection;
+	
+	@FindBy(xpath="//img[@class='landscape-div']")
+	private WebElement selectTheFirstEpisode;
+	
+	@FindBy(xpath="(//div[@class='content-card landscape-div'])[1]")
+	private WebElement selectTheFirstTrailerFromMovies;
+	
+	@FindBy(xpath="//input[@class='search']")
+	private WebElement clickOnSearchButton;
+	
+	@FindBy(xpath="//img[@alt='search-ico']")
+	private WebElement clickOnSearchOnField;
+	
+	@FindBy(xpath="//img[@alt='notif-btn-ico']")
+	private WebElement clickOnNotificationOnField;
+	
+	@FindBy(xpath="//img[@alt='next']")
+	private WebElement clickOnNextOnRelatedSection;
+	
+	@FindBy(xpath="//img[@alt='prev']")
+	private WebElement clickOnPreviousOnRelatedSection;
+	
+	@FindBy(xpath="(//img[@alt='Slider'])[2]")
+	private WebElement selecetTheSecondContentFromtheRelatedList;
 	
 	public void clickOnLoginButton() throws InterruptedException
 	{
@@ -88,6 +125,90 @@ public class HomePage extends BasePage {
 		clickOnBUYbutton.click();
 	}
 	
+	
+	public void clickOnBUYButtonforTheFirstSeriesContent() throws InterruptedException
+	{	
+		Thread.sleep(1500);
+		visibilityOfElement(clickOnSeriesFirstContent);
+		JavascriptExecutor js = (JavascriptExecutor)driver;
+//		js.executeScript("window.scrollBy(0,1000)");
+		js.executeScript("arguments[0].scrollIntoView();", clickOnSeriesFirstContent );
+		Thread.sleep(1500);
+		clickOnSeriesFirstContent.click();
+		Thread.sleep(500);
+		System.out.println("Checking the Button TEXT - Before Purchase : " + clickOnBUYbutton.getText());
+		visibilityOfElement(clickOnBUYbutton);
+		clickOnBUYbutton.click();
+	}
+	
+	public void selectTheFirstContentandOfMovieAndPlayTrailer() throws InterruptedException
+	{	
+		Thread.sleep(1500);
+		visibilityOfElement(clickOnMovieFirstContent);
+		JavascriptExecutor js = (JavascriptExecutor)driver;
+//		js.executeScript("window.scrollBy(0,1000)");
+		js.executeScript("arguments[0].scrollIntoView();", clickOnMovieFirstContent );
+		Thread.sleep(1500);
+		clickOnMovieFirstContent.click();
+		waitTillTheElementVisible(clickOnTrailerSection);
+		clickOnTrailerSection.click();
+		waitTillTheElementVisible(selectTheFirstTrailerFromMovies);
+		Thread.sleep(2000);
+		selectTheFirstTrailerFromMovies.click();	
+	}
+	
+	public void selectTheFirstContentFromMoviesandCheckTheRelatedSectionFlow() throws InterruptedException
+	{	
+		Thread.sleep(1500);
+		visibilityOfElement(clickOnMovieFirstContent);
+		JavascriptExecutor js = (JavascriptExecutor)driver;
+//		js.executeScript("window.scrollBy(0,1000)");
+		js.executeScript("arguments[0].scrollIntoView();", clickOnMovieFirstContent );
+		Thread.sleep(1500);
+		clickOnMovieFirstContent.click();
+		waitTillTheElementVisible(clickOnRelatedSection);
+		clickOnRelatedSection.click();
+		waitTillTheElementVisible(clickOnNextOnRelatedSection);
+		Thread.sleep(2000);
+		
+		clickOnNextOnRelatedSection.click();
+		Thread.sleep(500);
+		clickOnNextOnRelatedSection.click();
+		Thread.sleep(500);
+		clickOnNextOnRelatedSection.click();
+		
+		Thread.sleep(1000);
+		clickOnPreviousOnRelatedSection.click();
+		Thread.sleep(1000);
+		waitTillTheElementVisible(selecetTheSecondContentFromtheRelatedList);
+		selecetTheSecondContentFromtheRelatedList.click();
+	}
+	
+	public void selectTheEpisodeFromTheRelatedSection() throws InterruptedException
+	{	
+		Thread.sleep(1500);
+		visibilityOfElement(clickOnSeriesFirstContent);
+		JavascriptExecutor js = (JavascriptExecutor)driver;
+//		js.executeScript("window.scrollBy(0,1000)");
+		js.executeScript("arguments[0].scrollIntoView();", clickOnSeriesFirstContent );
+		Thread.sleep(1500);
+		clickOnSeriesFirstContent.click();
+		waitTillTheElementVisible(clickOnEpisodeSection);
+		clickOnEpisodeSection.click();
+		Thread.sleep(1000);
+		selectTheFirstEpisode.click();	
+	}
+	
+	public void playEpisode() throws InterruptedException 
+	{
+		waitTillTheElementVisible(clickOnEpisodeSection);
+		Thread.sleep(500);
+		clickOnEpisodeSection.click();
+		waitTillTheElementVisible(selectTheFirstEpisode);
+		Thread.sleep(500);
+		selectTheFirstEpisode.click();
+	}
+	
 	public void scollTheLIVEContentDetailPageAndOpenTheDetailPage() throws InterruptedException
 	{	
 		Thread.sleep(1500);
@@ -98,6 +219,7 @@ public class HomePage extends BasePage {
 		Thread.sleep(1500);
 		clickOnLiveFirstContent.click();
 	}
+	
 	
 	public void checkingtheButtonTextOnHomePage() throws InterruptedException
 	{	
@@ -110,6 +232,19 @@ public class HomePage extends BasePage {
 		clickOnLiveFirstContent.click();
 		System.out.println("Checking the Button TEXT - After Purchase : " + clickOnBUYbutton.getText());
 		clickCloseButtonOntheDetailPage.click();
+	}
+	
+	public void checkingtheButtonTextOnHomePageforSeriesPurchasedContent() throws InterruptedException
+	{	
+		Thread.sleep(1500);
+		visibilityOfElement(clickOnSeriesFirstContent);
+		JavascriptExecutor js = (JavascriptExecutor)driver;
+//		js.executeScript("window.scrollBy(0,1000)");
+		js.executeScript("arguments[0].scrollIntoView();", clickOnSeriesFirstContent );
+		Thread.sleep(1500);
+		clickOnSeriesFirstContent.click();
+		System.out.println("Checking the Button TEXT - After Purchase : " + clickOnBUYbutton.getText());
+		clickOnSeriesFirstContent.click();
 	}
 	
 	public void clickOnLIKEButton() throws InterruptedException
@@ -237,11 +372,35 @@ public class HomePage extends BasePage {
 	{	
 		waitTillTheElementVisible(clickOnBUYbutton);
 		Thread.sleep(2000);
-		System.out.println("Checking the Button TEXT - After Purchase : " + clickOnBUYbutton.getText());
-		
+		System.out.println("Checking the Button TEXT - After Purchase : " + clickOnBUYbutton.getText());	
 	}
 	
+	public void clickOnSearchButton() throws InterruptedException
+	{	
+		waitTillTheElementVisible(clickOnSearchButton);
+		Thread.sleep(500);
+		clickOnSearchButton.click();
+		Thread.sleep(500);
+		clickOnSearchButton.sendKeys("Live");
+		Thread.sleep(500);
+		clickOnSearchOnField.click();
+	}
 	
+	public void clickCloseButtononDetailPage() throws InterruptedException
+	{	
+		waitTillTheElementVisible(clickCloseButtonOntheDetailPage);
+		Thread.sleep(500);
+		clickCloseButtonOntheDetailPage.click();
+	}
+	
+	public void clickOnNotification() throws InterruptedException
+	{	
+		waitTillTheElementVisible(clickOnNotificationOnField);
+		Thread.sleep(500);
+		clickOnNotificationOnField.click();
+		Thread.sleep(2000);
+		clickOnNotificationOnField.click();
+	}
 
 
 }

@@ -11,7 +11,7 @@
   </groups> -->
   
   
-  <test name="Normal_Login">
+  <!-- <test name="Normal_Login">
 	<classes>
 		<class name="TestCases.LoginTest" />
 		<class name="TestCases.LogoutTest" />
@@ -30,7 +30,7 @@
 			<class name="TestCases.FBLoginTest" />
 			<class name="TestCases.LogoutTest" />
 		</classes>
-	</test>
+	</test> -->
 
 	<test name="Google_SignUp">
 		<classes>

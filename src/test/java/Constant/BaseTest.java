@@ -24,7 +24,7 @@ import com.relevantcodes.extentreports.NetworkMode;
 import Generics.Property;
 import Generics.Screenshot;
 
-//@Listeners(Generics.Listeners.class)
+@Listeners(Generics.Listeners.class)
 public class BaseTest implements AutomationConstant {
 	
 	public static WebDriver driver;

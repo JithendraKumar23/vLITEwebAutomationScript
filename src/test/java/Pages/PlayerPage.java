@@ -115,6 +115,7 @@ public class PlayerPage extends BasePage {
 	
 	public void clickBackButtonFromPlayerPage() throws InterruptedException 
 	{
+		Thread.sleep(500);
 		waitTillTheElementVisible(clickOnBackbutton);
 		Thread.sleep(1000);
 		clickOnBackbutton.click();
