@@ -10,10 +10,38 @@
   		</run>
   </groups> -->
   
-  
-  <!-- <test name="Normal_Login">
+  <!-- <test name="Forgot_Password_Test_Cases">
 	<classes>
-		<class name="TestCases.LoginTest" />
+		<class name="TestCases.ForgotPasswordTest" />
+		<class name="TestCases.ForgotPasswordNegetiveCaseTest" />
+	</classes>
+  </test> 
+  
+  <test name="NegetiveLogin_Test_Cases">
+	<classes>
+		<class name="TestCases.LoginPageNegetiveCase_WithWrongEmailandPasswordTest" />
+		<class name="TestCases.LoginPageNegetiveTest_WithoutEnteringtheEmailID" />
+		<class name="TestCases.LoginPageNegetiveTest_WithoutEnteringthePassword" /> 
+	</classes>
+  </test>
+  
+  <test name="PlayTrailer_For_Guest_User_Test_Cases">
+	<classes>
+		<class name="TestCases.PlayTrailerTest" />
+	</classes>
+  </test>
+  
+   <test name="About_PP_TC_Test_Cases">
+	<classes>
+		<class name="TestCases.AboutTest" />
+		<class name="TestCases.PrivacyPolicyTest" />
+		<class name="TestCases.TermsOfUseTest" />
+	</classes>
+  </test>
+   
+   <test name="Normal_SignUp">
+	<classes>
+		<class name="TestCases.SignUpTest" />
 		<class name="TestCases.LogoutTest" />
 	</classes>
   </test>
@@ -30,7 +58,7 @@
 			<class name="TestCases.FBLoginTest" />
 			<class name="TestCases.LogoutTest" />
 		</classes>
-	</test> -->
+	</test>
 
 	<test name="Google_SignUp">
 		<classes>
@@ -44,8 +72,76 @@
 			<class name="TestCases.GoogleLoginTest" />
 			<class name="TestCases.LogoutTest" />
 		</classes>
-	</test> 
-     
+	</test>  
+	
+	<test name="Login_via_DetailPage">
+		<classes>
+			<class name="TestCases.LoginViaDetailPage" />
+			<class name="TestCases.LogoutTest" />
+		</classes>
+	</test>
+	
+	<test name="Login_Via_FreeContent">
+		<classes>
+			<class name="TestCases.LoginViaFreeContentTest" />
+			<class name="TestCases.LogoutTest" />
+		</classes>
+	</test>
+	
+	<test name="DetailPage_Activities">
+	<classes>
+		<class name="TestCases.LoginTest" />
+		<class name="TestCases.LikeContentTest" />
+		<class name="TestCases.DislikeContentTest" /> 
+		<class name="TestCases.AddToWatchListTest" />
+		<class name="TestCases.RemoveFromWatchList" /> 
+		<class name="TestCases.RelatedContentTest" />
+	</classes>
+  </test>
+  
+  <test name="ProfilePage_Activities">
+	<classes>
+		<class name="TestCases.EditProfileTest" />
+		<class name="TestCases.ChangePasswordWithSameOldPasswordTest" />
+		<class name="TestCases.ChangePasswordTest" />
+	</classes>
+  </test>
+  
+   <test name="HomePage_Activities">
+	<classes>
+		<class name="TestCases.SearchTest" />
+		<class name="TestCases.HelpTest" />
+		<class name="TestCases.LogoutTest" />  
+	</classes>
+  </test>  -->
+  
+   <test name="PlayerPage_Activities">
+	<classes>
+		<class name="TestCases.PlayerTest" /> 
+		<class name="TestCases.PlayerQualityTest" />
+		<class name="TestCases.PlayerAudioTest" /> 
+		<class name="TestCases.PlayerSubtitleTest" />
+	</classes>
+  </test>
+  
+  <test name="Purchase_Activities">
+	<classes>
+		<class name="TestCases.PurchaseLiveContentTest" />
+		<class name="TestCases.PurchaseSeriesContent" /> 
+		<class name="TestCases.PurchaseSeries_ViaEpisodeTest" />
+	</classes>
+  </test>  
+ 
+ 
+ 
   
   
+  
+  <!-- <test name="FreeTrail_Subscription">
+	<classes>
+		<class name="TestCasesFreeTrailSubscriptionFromSideMenuTest" />
+	</classes>
+  </test> -->
+	
+	
 </suite>

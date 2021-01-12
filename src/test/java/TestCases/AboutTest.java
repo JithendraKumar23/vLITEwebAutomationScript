@@ -10,7 +10,7 @@ public class AboutTest extends BaseTest{
 
 
 	@Test(enabled = true)
-	public void helpPage() throws InterruptedException
+	public void aboutPage() throws InterruptedException
 	{
 		
 		HomePage homePage = new HomePage(driver);

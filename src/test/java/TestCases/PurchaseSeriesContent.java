@@ -4,7 +4,6 @@ import org.testng.annotations.Test;
 
 import Constant.BaseTest;
 import Pages.HomePage;
-import Pages.LoginPage;
 import Pages.PayTMPage;
 import Pages.PaymentPage;
 import Pages.SelectQualityPage;
@@ -17,7 +16,7 @@ public class PurchaseSeriesContent extends BaseTest{
 	public void PurchaseLiveContent() throws InterruptedException
 	{
 		HomePage homepage = new HomePage(driver);
-		LoginPage loginpage = new LoginPage(driver);
+		/*LoginPage loginpage = new LoginPage(driver);*/
 		SubscribeOrPurchasePage subscribeOrPurchasePage = new SubscribeOrPurchasePage(driver);
 		SelectQualityPage selectQualityPage = new SelectQualityPage(driver);
 		PaymentPage paymentPage = new PaymentPage(driver); 
@@ -25,9 +24,9 @@ public class PurchaseSeriesContent extends BaseTest{
 		SuccessPopUp successPopUp = new SuccessPopUp(driver);
 		
 		homepage.clickOnBUYButtonforTheFirstSeriesContent();
-		loginpage.enterEmailID(UN);
+		/*loginpage.enterEmailID(UN);
 		loginpage.enterPassword(PW);
-		loginpage.clickOnLoginButton();
+		loginpage.clickOnLoginButton();*/
 		
 		subscribeOrPurchasePage.clickOnPurchasebutton();
 		selectQualityPage.selectHDQuality();

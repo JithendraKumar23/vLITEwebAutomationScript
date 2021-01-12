@@ -8,7 +8,7 @@ import Pages.HomePage;
 public class TermsOfUseTest extends BaseTest {
 	
 	@Test(enabled = true)
-	public void helpPage() throws InterruptedException
+	public void termsOfUse() throws InterruptedException
 	{
 		HomePage homePage = new HomePage(driver);
 		

@@ -1,28 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test thread-count="5" name="Google_Login(failed)">
+  <test thread-count="5" name="Purchase_Activities(failed)">
     <classes>
-      <class name="TestCases.GoogleLoginTest">
+      <class name="TestCases.PurchaseSeries_ViaEpisodeTest">
         <methods>
           <include name="CloseFramework"/>
+          <include name="PurchaseSeries_contentflowViaEpisodeSection"/>
           <include name="Extent"/>
           <include name="GenerareReport"/>
           <include name="TakeScreenshot"/>
           <include name="initApplication"/>
-          <include name="googleSignUp"/>
         </methods>
-      </class> <!-- TestCases.GoogleLoginTest -->
-      <class name="TestCases.LogoutTest">
-        <methods>
-          <include name="CloseFramework"/>
-          <include name="Extent"/>
-          <include name="GenerareReport"/>
-          <include name="TakeScreenshot"/>
-          <include name="initApplication"/>
-          <include name="Logout"/>
-        </methods>
-      </class> <!-- TestCases.LogoutTest -->
+      </class> <!-- TestCases.PurchaseSeries_ViaEpisodeTest -->
     </classes>
-  </test> <!-- Google_Login(failed) -->
+  </test> <!-- Purchase_Activities(failed) -->
 </suite> <!-- Failed suite [Suite] -->

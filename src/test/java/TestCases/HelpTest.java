@@ -5,8 +5,6 @@ import org.testng.annotations.Test;
 import Constant.BaseTest;
 import Pages.HelpPage;
 import Pages.HomePage;
-import Pages.LoginPage;
-import Pages.SelectPlanPage;
 
 public class HelpTest extends BaseTest{
 
@@ -16,7 +14,7 @@ public class HelpTest extends BaseTest{
 	{
 		HomePage homePage = new HomePage(driver);
 
-		LoginPage loginpage = new LoginPage(driver);
+		/*LoginPage loginpage = new LoginPage(driver);
 		SelectPlanPage selectplan = new SelectPlanPage(driver);
 
 		homePage.clickOnLoginButton();
@@ -24,7 +22,7 @@ public class HelpTest extends BaseTest{
 		loginpage.enterPassword(PW);
 		loginpage.clickOnLoginButton();
 
-		selectplan.clickCloseButtonOnPlansPopUp();
+		selectplan.clickCloseButtonOnPlansPopUp();*/
 		
 		
 		HelpPage helpPage = new HelpPage(driver);

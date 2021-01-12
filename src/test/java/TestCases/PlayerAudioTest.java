@@ -3,9 +3,6 @@ package TestCases;
 import org.testng.annotations.Test;
 
 import Constant.BaseTest;
-import Pages.DetailPage;
-import Pages.HomePage;
-import Pages.LoginPage;
 import Pages.PlayerPage;
 import Pages.PlayerSettingsPage;
 
@@ -15,21 +12,22 @@ public class PlayerAudioTest extends BaseTest{
 	
 	public void listAndPrintTheSelectedAudio() throws InterruptedException
 	{
-		HomePage homepage = new HomePage(driver);
+		/*HomePage homepage = new HomePage(driver);
 		LoginPage loginpage = new LoginPage(driver);
 		DetailPage detailPage = new DetailPage(driver);
-		PlayerPage playerpage = new PlayerPage(driver);
-		PlayerSettingsPage playersettingspage = new PlayerSettingsPage(driver); 
+		
 		
 		homepage.clickOnBUYButton_forFreeContet_Vidoes();
 		loginpage.enterEmailID(UN);
 		loginpage.enterPassword(PW);
-		loginpage.clickOnLoginButton();
+		loginpage.clickOnLoginButton();*/
+		PlayerPage playerpage = new PlayerPage(driver);
+		PlayerSettingsPage playersettingspage = new PlayerSettingsPage(driver); 
 		
-		homepage.getTheTextOftheButtonfromDetailPage();
+		/*homepage.getTheTextOftheButtonfromDetailPage();
 		detailPage.clickOnBUYorWATCH();
 		
-		playerpage.clickOnQualityButton();
+		playerpage.clickOnQualityButton();*/
 		playersettingspage.listTheAudio();
 		playersettingspage.printSelectedAudioFromTheList();
 		

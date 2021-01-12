@@ -13,7 +13,6 @@ public class RelatedContentTest extends BaseTest
 		HomePage homePage = new HomePage(driver);
 		
 		homePage.selectTheFirstContentFromMoviesandCheckTheRelatedSectionFlow();
+		homePage.clickCloseButtononDetailPage();
 	}
-	
-	
 }

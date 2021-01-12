@@ -3,7 +3,6 @@ package TestCases;
 import org.testng.annotations.Test;
 import Constant.BaseTest;
 import Pages.HomePage;
-import Pages.LoginPage;
 import Pages.PayTMPage;
 import Pages.PaymentPage;
 import Pages.PlayerPage;
@@ -11,14 +10,14 @@ import Pages.SelectQualityPage;
 import Pages.SubscribeOrPurchasePage;
 import Pages.SuccessPopUp;
 
-public class PurchaseSeries_RelatedContentTest extends BaseTest{
+public class PurchaseSeries_ViaEpisodeTest extends BaseTest{
 
 	
 	@Test(enabled = true)
-	public void PurchaseLiveContent() throws InterruptedException
+	public void PurchaseSeries_contentflowViaEpisodeSection() throws InterruptedException
 	{
 		HomePage homepage = new HomePage(driver);
-		LoginPage loginpage = new LoginPage(driver);
+	/*	LoginPage loginpage = new LoginPage(driver);*/
 		SubscribeOrPurchasePage subscribeOrPurchasePage = new SubscribeOrPurchasePage(driver);
 		SelectQualityPage selectQualityPage = new SelectQualityPage(driver);
 		PaymentPage paymentPage = new PaymentPage(driver); 
@@ -27,9 +26,9 @@ public class PurchaseSeries_RelatedContentTest extends BaseTest{
 		PlayerPage playerPage = new PlayerPage(driver);
 		
 		homepage.selectTheEpisodeFromTheRelatedSection();
-		loginpage.enterEmailID(UN);
+		/*loginpage.enterEmailID(UN);
 		loginpage.enterPassword(PW);
-		loginpage.clickOnLoginButton();
+		loginpage.clickOnLoginButton();*/
 		
 		subscribeOrPurchasePage.clickOnPurchasebutton();
 		selectQualityPage.selectHDQuality();

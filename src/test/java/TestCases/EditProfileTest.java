@@ -7,10 +7,8 @@ import org.testng.annotations.Test;
 import Constant.BaseTest;
 import Pages.EditProfilePage;
 import Pages.HomePage;
-import Pages.LoginPage;
 import Pages.ProfileMenuPage;
 import Pages.ProfilePage;
-import Pages.SelectPlanPage;
 
 public class EditProfileTest extends BaseTest{
 
@@ -20,7 +18,7 @@ public class EditProfileTest extends BaseTest{
 	{
 		HomePage homePage = new HomePage(driver);
 		
-		LoginPage loginpage = new LoginPage(driver);
+		/*LoginPage loginpage = new LoginPage(driver);
 		SelectPlanPage selectplan = new SelectPlanPage(driver);
 		
 		homePage.clickOnLoginButton();
@@ -28,7 +26,7 @@ public class EditProfileTest extends BaseTest{
 		loginpage.enterPassword(PW);
 		loginpage.clickOnLoginButton();
 		
-		selectplan.clickCloseButtonOnPlansPopUp();
+		selectplan.clickCloseButtonOnPlansPopUp();*/
 		
 		ProfileMenuPage profileMenuPage = new ProfileMenuPage(driver);
 		ProfilePage profilePage = new ProfilePage(driver);

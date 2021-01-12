@@ -2,43 +2,43 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="20237" started-at="2021-01-06T05:19:51Z" finished-at="2021-01-06T05:20:11Z">
+  <suite name="Default suite" duration-ms="54877" started-at="2021-01-12T09:32:37Z" finished-at="2021-01-12T09:33:32Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="20237" started-at="2021-01-06T05:19:51Z" finished-at="2021-01-06T05:20:11Z">
-      <class name="TestCases.RelatedContentTest">
-        <test-method status="PASS" signature="initApplication()[pri:0, instance:TestCases.RelatedContentTest@53b32d7]" name="initApplication" is-config="true" duration-ms="16088" started-at="2021-01-06T05:19:35Z" finished-at="2021-01-06T05:19:51Z">
+    <test name="Default test" duration-ms="54877" started-at="2021-01-12T09:32:37Z" finished-at="2021-01-12T09:33:32Z">
+      <class name="TestCases.PurchaseSeries_ViaEpisodeTest">
+        <test-method status="PASS" signature="initApplication()[pri:0, instance:TestCases.PurchaseSeries_ViaEpisodeTest@53b32d7]" name="initApplication" is-config="true" duration-ms="24159" started-at="2021-01-12T09:32:13Z" finished-at="2021-01-12T09:32:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initApplication -->
-        <test-method status="PASS" signature="Extent()[pri:0, instance:TestCases.RelatedContentTest@53b32d7]" name="Extent" is-config="true" duration-ms="929" started-at="2021-01-06T05:19:51Z" finished-at="2021-01-06T05:19:52Z">
+        <test-method status="PASS" signature="Extent()[pri:0, instance:TestCases.PurchaseSeries_ViaEpisodeTest@53b32d7]" name="Extent" is-config="true" duration-ms="948" started-at="2021-01-12T09:32:37Z" finished-at="2021-01-12T09:32:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Extent -->
-        <test-method status="PASS" signature="relatedContent()[pri:0, instance:TestCases.RelatedContentTest@53b32d7]" name="relatedContent" duration-ms="18504" started-at="2021-01-06T05:19:52Z" finished-at="2021-01-06T05:20:11Z">
+        <test-method status="PASS" signature="PurchaseSeries_contentflowViaEpisodeSection()[pri:0, instance:TestCases.PurchaseSeries_ViaEpisodeTest@53b32d7]" name="PurchaseSeries_contentflowViaEpisodeSection" duration-ms="51305" started-at="2021-01-12T09:32:38Z" finished-at="2021-01-12T09:33:29Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- relatedContent -->
-        <test-method status="PASS" signature="TakeScreenshot(org.testng.ITestResult)[pri:0, instance:TestCases.RelatedContentTest@53b32d7]" name="TakeScreenshot" is-config="true" duration-ms="5" started-at="2021-01-06T05:20:11Z" finished-at="2021-01-06T05:20:11Z">
+        </test-method> <!-- PurchaseSeries_contentflowViaEpisodeSection -->
+        <test-method status="PASS" signature="TakeScreenshot(org.testng.ITestResult)[pri:0, instance:TestCases.PurchaseSeries_ViaEpisodeTest@53b32d7]" name="TakeScreenshot" is-config="true" duration-ms="47" started-at="2021-01-12T09:33:29Z" finished-at="2021-01-12T09:33:29Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=relatedContent status=SUCCESS method=RelatedContentTest.relatedContent()[pri:0, instance:TestCases.RelatedContentTest@53b32d7] output={null}]]]>
+                <![CDATA[[TestResult name=PurchaseSeries_contentflowViaEpisodeSection status=SUCCESS method=PurchaseSeries_ViaEpisodeTest.PurchaseSeries_contentflowViaEpisodeSection()[pri:0, instance:TestCases.PurchaseSeries_ViaEpisodeTest@53b32d7] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TakeScreenshot -->
-        <test-method status="PASS" signature="GenerareReport()[pri:0, instance:TestCases.RelatedContentTest@53b32d7]" name="GenerareReport" is-config="true" duration-ms="654" started-at="2021-01-06T05:20:11Z" finished-at="2021-01-06T05:20:11Z">
+        <test-method status="PASS" signature="GenerareReport()[pri:0, instance:TestCases.PurchaseSeries_ViaEpisodeTest@53b32d7]" name="GenerareReport" is-config="true" duration-ms="2376" started-at="2021-01-12T09:33:29Z" finished-at="2021-01-12T09:33:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GenerareReport -->
-        <test-method status="PASS" signature="CloseFramework()[pri:0, instance:TestCases.RelatedContentTest@53b32d7]" name="CloseFramework" is-config="true" duration-ms="1" started-at="2021-01-06T05:20:11Z" finished-at="2021-01-06T05:20:11Z">
+        <test-method status="PASS" signature="CloseFramework()[pri:0, instance:TestCases.PurchaseSeries_ViaEpisodeTest@53b32d7]" name="CloseFramework" is-config="true" duration-ms="0" started-at="2021-01-12T09:33:32Z" finished-at="2021-01-12T09:33:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseFramework -->
-      </class> <!-- TestCases.RelatedContentTest -->
+      </class> <!-- TestCases.PurchaseSeries_ViaEpisodeTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

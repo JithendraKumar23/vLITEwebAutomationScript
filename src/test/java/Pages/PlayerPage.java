@@ -60,9 +60,9 @@ public class PlayerPage extends BasePage {
 	
 	public void pauseContent() throws InterruptedException 
 	{
-		Thread.sleep(5000);
+		Thread.sleep(4000);
 		waitTillTheElementVisible(ClickPAUSEButton);
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		ClickPAUSEButton.click();
 	}
 	

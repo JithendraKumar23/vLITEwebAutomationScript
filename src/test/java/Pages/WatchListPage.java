@@ -24,6 +24,9 @@ public class WatchListPage extends BasePage{
 	
 	@FindBy(xpath="(//div[@class='vlite-content-item-3 align-landscape '])[1]")
     public WebElement waitingCondition;
+	
+	@FindBy(xpath="//img[@class='close']")
+    public WebElement clickOnCloseButton;
 
 	public void comparingOnTheTitleANDPrintingTheMessageOnWatchListPage() throws InterruptedException
 	{
@@ -89,6 +92,12 @@ public class WatchListPage extends BasePage{
 		}
 	}
 	
+	}
+	
+	public void clickOnCloseButton() 
+	{
+		waitTillTheElementVisible(waitingCondition);
+		clickOnCloseButton.click();
 	}
 	
 

@@ -52,9 +52,16 @@ public class SideMenuPage extends BasePage{
 		Thread.sleep(500);
 		clickOnWatchListButton.click();
 	}
+	
+	public void selectTheHomeSection() throws InterruptedException
+	{
+		waitTillTheElementVisible(clickOnHomebutton);
+		Thread.sleep(500);
+		clickOnHomebutton.click();
+	}
 
 	
-	Methos is Wrong - Correct IT
+	//CORRECT THE METHOD - WRONG METHOD WRITTEN BELOW
 	public void clickAlTheListFromSideMenu() throws InterruptedException
 	{
 		Thread.sleep(2000);

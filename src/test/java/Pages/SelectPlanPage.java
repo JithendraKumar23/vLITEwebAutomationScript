@@ -24,7 +24,7 @@ public class SelectPlanPage extends BasePage{
 	@FindBy(xpath="//*[text()='Subscribe']")
 	private WebElement checkingTheSubscribeTEXTonthePlansPage;
 
-	@FindBy(xpath="//div[@class='expiry' and text()='Start FREE TRIAL for 1 days']")
+	@FindBy(xpath="//div[@class='expiry' and text()='Start FREE TRIAL for 3 days']")
 	private WebElement clickOnFREETRAILfor1DAYLink;
 
 	@FindBy(xpath="(//button[@class='vlt-btn btn-login btn-lg-primary inverted button-click-hover'])[1]")

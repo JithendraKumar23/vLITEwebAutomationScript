@@ -6,11 +6,8 @@ import Constant.BaseTest;
 import Pages.HomePage;
 import Pages.LoginPage;
 
-public class LoginPageNegetiveTest_WithoutEnteringthePassword extends BaseTest {
-	
-
-
-	
+public class LoginPageNegetiveTest_WithoutEnteringthePassword extends BaseTest 
+{
 	@Test(enabled = true)
 	public void LoginPageNegetiveTestCase_WithoutEnteringthePassword() throws InterruptedException
 	{

@@ -37,15 +37,17 @@ public class ForgotPasswordPage extends BasePage {
 	
 	public void forgotPassword() throws InterruptedException 
 	{
-		waitTillTheElementVisible(enterEmailID);
-		enterEmailID.click();
 		Thread.sleep(500);
+		waitTillTheElementVisible(enterEmailID);
+		Thread.sleep(1000);
+		enterEmailID.click();
+		Thread.sleep(1000);
 		enterEmailID.sendKeys("sub@mob.com");
 		Thread.sleep(1000);
 		clickOnSENDButton.click();
 		
 		waitTillTheElementVisible(verifyigtheSuccessMessage);
-		System.out.println("Printing the Message From the Success page " + verifyigtheSuccessMessage.getText());
+		System.out.println("Printing the Message From the Success page : " + verifyigtheSuccessMessage.getText());
 		
 		Thread.sleep(1000);
 		clickOnCloseButton.click();

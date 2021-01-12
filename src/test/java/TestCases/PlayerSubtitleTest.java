@@ -3,24 +3,20 @@ package TestCases;
 import org.testng.annotations.Test;
 
 import Constant.BaseTest;
-import Pages.DetailPage;
-import Pages.HomePage;
-import Pages.LoginPage;
 import Pages.PlayerPage;
 import Pages.PlayerSettingsPage;
 
-public class PlayerSubtileTest extends BaseTest{
+public class PlayerSubtitleTest extends BaseTest{
 
 	
 @Test(enabled = true)
 	
-	public void listAndPrintTheSelectedAudio() throws InterruptedException
-	{
+	public void listAndPrintTheSelectedSubtitle() throws InterruptedException
+	{/*
 		HomePage homepage = new HomePage(driver);
 		LoginPage loginpage = new LoginPage(driver);
 		DetailPage detailPage = new DetailPage(driver);
-		PlayerPage playerpage = new PlayerPage(driver);
-		PlayerSettingsPage playersettingspage = new PlayerSettingsPage(driver); 
+		
 		
 		homepage.clickOnBUYButton_forFreeContet_Vidoes();
 		loginpage.enterEmailID(UN);
@@ -30,7 +26,10 @@ public class PlayerSubtileTest extends BaseTest{
 		homepage.getTheTextOftheButtonfromDetailPage();
 		detailPage.clickOnBUYorWATCH();
 		
-		playerpage.clickOnQualityButton();
+		playerpage.clickOnQualityButton();*/
+	
+	    PlayerPage playerpage = new PlayerPage(driver);
+	    PlayerSettingsPage playersettingspage = new PlayerSettingsPage(driver); 
 		playersettingspage.listOfSubstiles();
 		playersettingspage.selectTheSubtileandPrintSelectedQuality();
 		playersettingspage.deselectTheSubtileandPrintSelectedQuality();

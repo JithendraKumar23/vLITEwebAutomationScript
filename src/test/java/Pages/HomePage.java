@@ -1,6 +1,7 @@
 package Pages;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -41,6 +42,9 @@ public class HomePage extends BasePage {
 	@FindBy(xpath="//*[@id='car-slider-shows-item0']/div/div/div[1]/div[1]/img")
 	private WebElement clickOnSeriesFirstContent;
 	
+	@FindBy(xpath="//*[@id='car-slider-shows-item1']/div/div[1]/div/div[1]/img")
+	private WebElement clickOnSeriesSecondContent;
+	
 	@FindBy(xpath="//*[@id='car-slider-videos-item0']/div/div/div[1]/div[1]/img")
 	private WebElement clickOnVidoesFirstContent_freeContent;
 	
@@ -80,8 +84,14 @@ public class HomePage extends BasePage {
 	@FindBy(xpath="//*[text()='Related']")
 	private WebElement clickOnRelatedSection;
 	
-	@FindBy(xpath="//img[@class='landscape-div']")
+	@FindBy(xpath="(//img[@class='landscape-div'])[1]")
 	private WebElement selectTheFirstEpisode;
+	
+	@FindBy(xpath="//*[@id='car-slider-Rhymesc-item0']/div/div[1]/img[2]")
+	private WebElement clickOnPLAYIcon;
+	
+	@FindBy(xpath="//*[@id='car-slider-Rhymesc-item0']")
+	private WebElement waitingConditionForEpisode;
 	
 	@FindBy(xpath="(//div[@class='content-card landscape-div'])[1]")
 	private WebElement selectTheFirstTrailerFromMovies;
@@ -106,7 +116,9 @@ public class HomePage extends BasePage {
 	
 	public void clickOnLoginButton() throws InterruptedException
 	{
+		Thread.sleep(1000);
 		visibilityOfElement(loginButton);
+		Thread.sleep(500);
 		loginButton.click();
 	}
 	
@@ -187,15 +199,16 @@ public class HomePage extends BasePage {
 	public void selectTheEpisodeFromTheRelatedSection() throws InterruptedException
 	{	
 		Thread.sleep(1500);
-		visibilityOfElement(clickOnSeriesFirstContent);
+		visibilityOfElement(clickOnSeriesSecondContent);
 		JavascriptExecutor js = (JavascriptExecutor)driver;
 //		js.executeScript("window.scrollBy(0,1000)");
-		js.executeScript("arguments[0].scrollIntoView();", clickOnSeriesFirstContent );
+		js.executeScript("arguments[0].scrollIntoView();", clickOnSeriesSecondContent );
 		Thread.sleep(1500);
-		clickOnSeriesFirstContent.click();
+		clickOnSeriesSecondContent.click();
 		waitTillTheElementVisible(clickOnEpisodeSection);
 		clickOnEpisodeSection.click();
 		Thread.sleep(1000);
+		waitTillTheElementVisible(selectTheFirstEpisode);
 		selectTheFirstEpisode.click();	
 	}
 	
@@ -204,9 +217,9 @@ public class HomePage extends BasePage {
 		waitTillTheElementVisible(clickOnEpisodeSection);
 		Thread.sleep(500);
 		clickOnEpisodeSection.click();
-		waitTillTheElementVisible(selectTheFirstEpisode);
-		Thread.sleep(500);
-		selectTheFirstEpisode.click();
+		waitTillTheElementVisible(waitingConditionForEpisode);
+		Thread.sleep(3000);
+		clickOnPLAYIcon.click();
 	}
 	
 	public void scollTheLIVEContentDetailPageAndOpenTheDetailPage() throws InterruptedException
@@ -230,6 +243,7 @@ public class HomePage extends BasePage {
 		js.executeScript("arguments[0].scrollIntoView();", clickOnLiveFirstContent );
 		Thread.sleep(1500);
 		clickOnLiveFirstContent.click();
+		Thread.sleep(1500);
 		System.out.println("Checking the Button TEXT - After Purchase : " + clickOnBUYbutton.getText());
 		clickCloseButtonOntheDetailPage.click();
 	}
@@ -237,14 +251,14 @@ public class HomePage extends BasePage {
 	public void checkingtheButtonTextOnHomePageforSeriesPurchasedContent() throws InterruptedException
 	{	
 		Thread.sleep(1500);
-		visibilityOfElement(clickOnSeriesFirstContent);
+		visibilityOfElement(clickOnSeriesSecondContent);
 		JavascriptExecutor js = (JavascriptExecutor)driver;
 //		js.executeScript("window.scrollBy(0,1000)");
-		js.executeScript("arguments[0].scrollIntoView();", clickOnSeriesFirstContent );
+		js.executeScript("arguments[0].scrollIntoView();", clickOnSeriesSecondContent );
 		Thread.sleep(1500);
-		clickOnSeriesFirstContent.click();
+		clickOnSeriesSecondContent.click();
 		System.out.println("Checking the Button TEXT - After Purchase : " + clickOnBUYbutton.getText());
-		clickOnSeriesFirstContent.click();
+		clickOnSeriesSecondContent.click();
 	}
 	
 	public void clickOnLIKEButton() throws InterruptedException
@@ -264,7 +278,10 @@ public class HomePage extends BasePage {
 	
 	public void clickOnProfileMenu() throws InterruptedException
 	{	
-		Thread.sleep(2500);
+		JavascriptExecutor js = (JavascriptExecutor)driver;
+//		js.executeScript("window.scrollBy(0,1000)");
+		js.executeScript("arguments[0].scrollIntoView();", clickOnHambergurMenu );
+		Thread.sleep(1500);
 		visibilityOfElement(clickOnProfileMenu);
 		clickOnProfileMenu.click();
 	}
@@ -388,6 +405,7 @@ public class HomePage extends BasePage {
 	
 	public void clickCloseButtononDetailPage() throws InterruptedException
 	{	
+		Thread.sleep(500);
 		waitTillTheElementVisible(clickCloseButtonOntheDetailPage);
 		Thread.sleep(500);
 		clickCloseButtonOntheDetailPage.click();
@@ -395,11 +413,54 @@ public class HomePage extends BasePage {
 	
 	public void clickOnNotification() throws InterruptedException
 	{	
+		Thread.sleep(500);
 		waitTillTheElementVisible(clickOnNotificationOnField);
 		Thread.sleep(500);
 		clickOnNotificationOnField.click();
 		Thread.sleep(2000);
 		clickOnNotificationOnField.click();
+	}
+	
+	
+	
+	// Continue Watching Test - InComplete Test
+	
+	@FindBy(xpath = "//div[@class='close-div']")
+	private List<WebElement> list1;
+	
+	@FindBy(xpath = "//div[@class='close-div']")
+	private WebElement element;
+	
+	public void ssssss() throws InterruptedException
+	{	
+		//waitTillTheElementVisible(element);
+		Thread.sleep(1000);
+		
+		System.out.println(element.isDisplayed());
+		
+		if(true)
+		{
+		JavascriptExecutor js = (JavascriptExecutor)driver;
+//		js.executeScript("window.scrollBy(0,1000)");
+		js.executeScript("arguments[0].scrollIntoView();", element );
+		
+		for(int i = 0 ; i<= list1.size() ; i++)
+		{
+			if(element.isDisplayed())
+			{
+				element.click();
+			}
+			else
+			{
+				System.out.println("Test");
+			}
+			System.out.println(i);
+		}
+
+		}
+		
+		
+		
 	}
 
 

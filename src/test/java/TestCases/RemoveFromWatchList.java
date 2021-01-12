@@ -18,7 +18,7 @@ public class RemoveFromWatchList extends BaseTest{
 	{
 		HomePage homePage = new HomePage(driver);
 
-		LoginPage loginpage = new LoginPage(driver);
+		/*LoginPage loginpage = new LoginPage(driver);
 		SelectPlanPage selectplan = new SelectPlanPage(driver);
 
 		homePage.clickOnLoginButton();
@@ -26,7 +26,7 @@ public class RemoveFromWatchList extends BaseTest{
 		loginpage.enterPassword(PW);
 		loginpage.clickOnLoginButton();
 
-		selectplan.clickCloseButtonOnPlansPopUp();
+		selectplan.clickCloseButtonOnPlansPopUp();*/
 
 		DetailPage detailPage = new DetailPage(driver);
 		SideMenuPage sidemenuPage = new SideMenuPage(driver);
@@ -39,7 +39,7 @@ public class RemoveFromWatchList extends BaseTest{
 		homePage.clickOnhambergurMenu();
 		sidemenuPage.selectTheWatchListSection();
 		watchListPage.afterRemovingtheContentFromDetailpageComparingOnTheTitleANDPrintingTheMessageOnWatchListPage();
-		
+		watchListPage.clickOnCloseButton();
 	}
 
 

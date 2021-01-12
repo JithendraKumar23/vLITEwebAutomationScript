@@ -6,16 +6,15 @@ import Constant.BaseTest;
 import Pages.HomePage;
 import Pages.LoginPage;
 
-public class LoginPageNegetiveTest_WithOutEnteringEmilandPassword extends BaseTest {
+public class LoginPageNegetiveCase_WithWrongEmailandPasswordTest extends BaseTest {
 	
 	@Test(enabled = true)
-	public void LoginPageNegetiveTestCase() throws InterruptedException
+	public void LoginPageNegetiveTestCase_WithWrongEmailandPassword() throws InterruptedException
 	{
 		HomePage homePage = new HomePage(driver);
 		LoginPage loginPage = new LoginPage(driver);
 		
 		homePage.clickOnLoginButton();
 		loginPage.enterGuestUserEmailIDandPassword();
-		loginPage.clickOncloseButton();
 	}
 }

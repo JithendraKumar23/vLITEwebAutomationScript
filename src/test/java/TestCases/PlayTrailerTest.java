@@ -16,6 +16,7 @@ public class PlayTrailerTest extends BaseTest{
 		
 		homePage.selectTheFirstContentandOfMovieAndPlayTrailer();
 		playerPage.getTheContentTitle();
+		Thread.sleep(10000);
 		playerPage.clickBackButtonFromPlayerPage();
 		
 	}

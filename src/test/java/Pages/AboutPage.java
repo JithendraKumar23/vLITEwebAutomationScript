@@ -94,6 +94,7 @@ public class AboutPage extends BasePage {
 	
 	public void closeAboutPage() throws InterruptedException 
 	{
+		Thread.sleep(500);
 		waitTillTheElementVisible(waitingcondition);
 		Thread.sleep(1000);
 		clickOnCloseButton.click();

@@ -16,7 +16,7 @@ public class LikeContentTest extends BaseTest{
 	{
 	HomePage homePage = new HomePage(driver);
 	
-	LoginPage loginpage = new LoginPage(driver);
+	/*LoginPage loginpage = new LoginPage(driver);
 	SelectPlanPage selectplan = new SelectPlanPage(driver);
 	
 	homePage.clickOnLoginButton();
@@ -24,7 +24,7 @@ public class LikeContentTest extends BaseTest{
 	loginpage.enterPassword(PW);
 	loginpage.clickOnLoginButton();
 	
-	selectplan.clickCloseButtonOnPlansPopUp();
+	selectplan.clickCloseButtonOnPlansPopUp();*/
 	
 	DetailPage detailPage = new DetailPage(driver);
 	
@@ -32,6 +32,7 @@ public class LikeContentTest extends BaseTest{
 	Thread.sleep(2000);
 	homePage.scollTheLIVEContentDetailPageAndOpenTheDetailPage();
 	detailPage.likeFunctionality();
+	homePage.clickCloseButtononDetailPage();
 }
 
 

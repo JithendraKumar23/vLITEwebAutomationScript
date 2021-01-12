@@ -130,8 +130,9 @@ public class LoginPage extends BasePage {
 	
 	public void clickOncloseButton() throws InterruptedException
 	{
+		Thread.sleep(1000);
 		visibilityOfElement(toClosetheLoginPopUp);
-		Thread.sleep(500);
+		Thread.sleep(1000);
 		toClosetheLoginPopUp.click();
 	}
 

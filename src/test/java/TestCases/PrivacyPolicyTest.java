@@ -9,11 +9,12 @@ public class PrivacyPolicyTest extends BaseTest{
 	
 
 	@Test(enabled = true)
-	public void helpPage() throws InterruptedException
+	public void privacyPolicy() throws InterruptedException
 	{
 		HomePage homePage = new HomePage(driver);
 		
 		homePage.clickOnPrivacyPolicy();
+		
 
 	}
 

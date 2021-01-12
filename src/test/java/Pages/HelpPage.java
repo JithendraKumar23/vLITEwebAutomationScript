@@ -62,7 +62,7 @@ public class HelpPage extends BasePage{
 		Thread.sleep(1000);
 		JavascriptExecutor js = (JavascriptExecutor)driver;
 		js.executeScript("arguments[0].scrollIntoView();", clickOnContactSupporttoSubmitTheRequest );
-		//clickOnContactSupporttoSubmitTheRequest.click();
+		clickOnContactSupporttoSubmitTheRequest.click();
 	}
 	
 }

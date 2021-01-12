@@ -65,7 +65,7 @@ public class EditProfilePage extends BasePage {
 		Thread.sleep(3000);
 		nameFieldOnEditPage.sendKeys(Keys.chord(Keys.CONTROL, "a", Keys.DELETE), "Jeethu Gowda");
 
-		waitTillTheElementVisible(emailFieldOnEditPage);
+	/*	waitTillTheElementVisible(emailFieldOnEditPage);
 		Thread.sleep(2000);
 		
 		Thread.sleep(500);
@@ -76,7 +76,7 @@ public class EditProfilePage extends BasePage {
 		waitTillTheElementVisible(selectTheOCTMonth);
 		selectTheOCTMonth.click();
 		waitTillTheElementVisible(selectTheDate);
-		selectTheDate.click();
+		selectTheDate.click();*/
 		waitTillTheElementVisible(selecttheFemaleRadioButton);
 		selecttheFemaleRadioButton.click();
 		clickOnSAVEButtonOnEditProfilePage.click();

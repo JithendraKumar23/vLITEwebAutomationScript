@@ -8,17 +8,14 @@ import Pages.HomePage;
 import Pages.LoginPage;
 import Pages.SelectPlanPage;
 
-public class DislikeContentTest extends BaseTest{
-
-	
-
-	
+public class DislikeContentTest extends BaseTest
+{
 	@Test(enabled = true)
-	public void clickOnLikeButton() throws InterruptedException
+	public void clickOnDisLikeButton() throws InterruptedException
 	{
 	HomePage homePage = new HomePage(driver);
 	
-	LoginPage loginpage = new LoginPage(driver);
+	/*LoginPage loginpage = new LoginPage(driver);
 	SelectPlanPage selectplan = new SelectPlanPage(driver);
 	
 	homePage.clickOnLoginButton();
@@ -26,7 +23,7 @@ public class DislikeContentTest extends BaseTest{
 	loginpage.enterPassword(PW);
 	loginpage.clickOnLoginButton();
 	
-	selectplan.clickCloseButtonOnPlansPopUp();
+	selectplan.clickCloseButtonOnPlansPopUp();*/
 	
 	DetailPage detailPage = new DetailPage(driver);
 	
@@ -34,5 +31,6 @@ public class DislikeContentTest extends BaseTest{
 	Thread.sleep(2000);
 	homePage.scollTheLIVEContentDetailPageAndOpenTheDetailPage();
 	detailPage.dislikeFunctionality();
+	homePage.clickCloseButtononDetailPage();
 }
 }
