@@ -110,13 +110,13 @@ public class SignUpPage extends BasePage {
 
 				System.out.println(driver.switchTo().window(child_window).getTitle());
 				waitTillTheElementVisible(enterEmailIDFortheGoogleAccount);
-				enterEmailIDFortheGoogleAccount.sendKeys("jithendra.kumar@mobiotics.com");
+				enterEmailIDFortheGoogleAccount.sendKeys("ENTER YOU EMAIL ID");
 				Thread.sleep(2500);
 				clickOnNEXTButtoInGoogleSignInPopUp.click();
 
 				Thread.sleep(2500);
 				waitTillTheElementVisible(enterPasswordFortheGoogleAccount);
-				enterPasswordFortheGoogleAccount.sendKeys("9880325491");
+				enterPasswordFortheGoogleAccount.sendKeys("ENTER YOUR PASSWORD");
 				clickonCheckBoxToDispaythePassword.click();
 				Thread.sleep(1000);
 				clickOnNEXTButtoInEnterPasswordPage.click();
@@ -152,10 +152,10 @@ public class SignUpPage extends BasePage {
 
 				System.out.println(driver.switchTo().window(child_window).getTitle());
 				waitTillTheElementVisible(enterEmailIDFortheFBAccount);
-				enterEmailIDFortheFBAccount.sendKeys("jeethu301095@gmail.com");
+				enterEmailIDFortheFBAccount.sendKeys("ENTER YOUR EMAIL ID");
 				Thread.sleep(1000);
 				waitTillTheElementVisible(enterPasswordFortheFBAccount);
-				enterPasswordFortheFBAccount.sendKeys("Gurji@Shishya");
+				enterPasswordFortheFBAccount.sendKeys("ENTER YOUR PASSWORD");
 				Thread.sleep(500);
 				clickOnLoginButtonOnFBLoginpage.click();
 				driver.switchTo().window(parent);
